@@ -6,8 +6,6 @@ This section covers the essentials of Modern Portfolio Theory (MPT) applied to a
 `AMZN`, `AAPL`, `TSLA`, `NVDA`, `MSFT`, `META`, `GOOGL`  
 We analyze historical price data, compute returns, covariances, and then optimize for various objectives (Sharpe ratio, maximum return under risk constraints, minimum volatility).
 
-We analyze historical price data, compute returns, covariances, and then optimize for various objectives (Sharpe ratio, maximum return under risk constraints, minimum volatility).
-
 ## 1.2 Data Acquisition & Preprocessing
 
 - **Data Source**: `yfinance` Python library  
@@ -114,6 +112,52 @@ $$
 
 *(When generated, save all plots into `assets/` and embed as needed.)*
 
----
+## 1.6 Code Implementation
 
-> **Note**: As you add Forwards and Futures content, revisit this file for cross-references (e.g., hedging with futures in a portfolio context).
+All implementation code resides in the `notebooks/` directory. The following Jupyter notebooks demonstrate the full workflows:
+
+- **`sharpe_maximum_MPT.ipynb`**  
+  - Fetches historical price data via `yfinance`.  
+  - Computes daily log returns, expected return vector ($\mu$), and covariance matrix ($\Sigma$).  
+  - Implements Sharpe ratio maximization:  
+    ```python
+    # Objective: negative Sharpe ratio
+    def neg_sharpe(weights, mu, Sigma, rf):
+        port_return = weights.dot(mu)
+        port_vol = np.sqrt(weights.T @ Sigma @ weights)
+        return -(port_return - rf) / port_vol
+    ```
+  - Uses `scipy.optimize.minimize` with weight constraints to find optimal $w^*$.  
+  - Plots the resulting efficient frontier.
+
+- **`returns_max_MPT.ipynb`**  
+  - Similar data preprocessing steps as above.  
+  - Implements return maximization under a volatility cap $\sigma_{\max}$:  
+    ```python
+    # Constraints: portfolio variance ≤ sigma_max^2
+    constraints = (
+        {'type': 'eq', 'fun': lambda w: np.sum(w) - 1},
+        {'type': 'ineq', 'fun': lambda w: sigma_max**2 - w.T @ Sigma @ w}
+    )
+    ```
+  - Solves for weights $w^*$ maximizing $w^\top \mu$ given the variance constraint.  
+  - Generates the return‐risk tradeoff by varying $\sigma_{\max}$.
+
+- **`std_dev_min_MPT.ipynb`**  
+  - Data loading and preprocessing as above.  
+  - Implements minimum‐variance objective:  
+    ```python
+    # Objective: portfolio variance
+    def portfolio_var(weights, Sigma):
+        return weights.T @ Sigma @ weights
+    ```
+  - Applies weight constraints (sum to 1, nonnegativity) to minimize variance.  
+  - Compares resulting weights and risk level with Sharpe‐maximizing portfolio.
+
+Each notebook is fully reproducible and includes explanatory Markdown cells, code cells, and visualization outputs. To run them:
+
+1. Navigate to the `notebooks/` folder.
+2. Launch Jupyter Lab or Notebook:  
+   ```bash
+   cd notebooks
+   jupyter notebook
