@@ -10,8 +10,6 @@ A yield curve shows the relationship between interest rates (or bond yields) and
 - **Flat**: Uncertainty or policy transitions
 
 ## 5.2 Example (Schematic)
-
-*(To be replaced with plotted figure)*
 <p align="center">
   <img src="./assets/yield_curve.png" alt="Yield Curve" width="500"/>
 </p>
