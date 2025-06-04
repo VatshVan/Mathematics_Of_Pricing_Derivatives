@@ -14,9 +14,9 @@ This folder contains all Week 2 materials for “Mathematics of Derivative Prici
    - Mark‐to‐market and margining  
    - Pricing relationships
 
-Refer to the individual topic files (`.md`) for detailed notes, and to the Jupyter notebooks in `notebooks/` for code implementations on a basket of tech stocks (AMZN, AAPL, TSLA, NVDA, MSFT, META, GOOGL).
+Refer to the individual topic files (`.md`) for detailed notes and to the Jupyter notebooks in `notebooks/` for code implementations on a basket of tech stocks (AMZN, AAPL, TSLA, NVDA, MSFT, META, GOOGL).
 
-Once all concepts are covered, consolidate them into the **[Integrated Weekly Report](./04_Integrated_Notes.md)**.
+<!--Once all concepts are covered, consolidate them into the **[Integrated Weekly Report](./04_Integrated_Notes.md)**.-->
 
 ---
 
@@ -28,3 +28,4 @@ Once all concepts are covered, consolidate them into the **[Integrated Weekly Re
 - **04_Integrated_Notes.md** – Placeholder for the combined narrative report (≈2 pages)  
 - **notebooks/** – Jupyter notebooks supporting the portfolio exercises  
 - **assets/** – Charts, payoff diagrams, or screenshots you’ll generate as you progress
+- **Data/** - Historical data downloaded of the given stocks
