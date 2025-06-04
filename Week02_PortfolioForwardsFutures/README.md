@@ -29,3 +29,4 @@ Refer to the individual topic files (`.md`) for detailed notes and to the Jupyte
 - **notebooks/** – Jupyter notebooks supporting the portfolio exercises  
 - **assets/** – Charts, payoff diagrams, or screenshots you’ll generate as you progress
 - **Data/** - Historical data downloaded of the given stocks
+- **Plots/** - Contain plots
