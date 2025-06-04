@@ -14,9 +14,9 @@ Interest rates represent the time value of money. They quantify the opportunity 
 
 | Type        | Formula                            |
 |-------------|-------------------------------------|
-| Simple      | \( A = P(1 + rt) \)                |
-| Compound    | \( A = P(1 + \frac{r}{n})^{nt} \)  |
-| Continuous  | \( A = Pe^{rt} \)                  |
+| Simple      | $$\( A = P(1 + rt) \)$$                |
+| Compound    | $$\( A = P(1 + \frac{r}{n})^{nt} \)$$  |
+| Continuous  | $$\( A = Pe^{rt} \)$$                  |
 
 ## 2.4 Term Structure of Interest Rates
 
