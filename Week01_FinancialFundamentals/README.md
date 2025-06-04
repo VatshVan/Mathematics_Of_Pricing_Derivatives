@@ -1,6 +1,6 @@
 # Week 01: Financial Fundamentals
 
-This folder contains notes, examples, and diagrams from the first week of the project on **Mathematics of Derivative Pricing**. The focus is on building a robust foundation in financial markets, interest rates, cash flows, and bond pricing.
+This folder contains notes, examples and diagrams from the first week of the project on **Mathematics of Derivative Pricing**. The focus is on building a robust foundation in financial markets, interest rates, cash flows, and bond pricing.
 
 ## Covered Topics
 
