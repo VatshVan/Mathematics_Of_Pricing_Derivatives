@@ -24,7 +24,7 @@ A yield curve shows the relationship between interest rates (or bond yields) and
 
 ## 5.4 Mathematical Linkage
 
-Forward Rate \( f_{2,3} \) from spot rates \( r_2, r_3 \):
+Forward Rate $$\( f_{2,3} \)$$ from spot rates $$\( r_2, r_3 \)$$:
 
 $$
 (1 + r_3)^3 = (1 + r_2)^2 \cdot (1 + f_{2,3})
