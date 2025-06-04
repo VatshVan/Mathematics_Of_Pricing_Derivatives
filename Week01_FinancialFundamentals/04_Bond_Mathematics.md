@@ -18,18 +18,23 @@ $$
 ## 4.2 Duration Concepts
 
 ### Macaulay Duration:
-Weighted average time until cash flows are received:
-<img 
-  src="https://latex.codecogs.com/png.image?\dpi{150} \bg_white D_{mac}=\frac{\sum_{t=1}^{n}t\cdot\frac{CF_t}{(1+y)^t}}{Price}" 
-  alt="Macaulay Duration Formula" 
-  style="max-width: 100%; height: auto;" 
-/>
+Weighted average time until cash flows are received:  
+<div align="center">  
 
+$$D_{\text{mac}} = \frac{\sum\limits_{t=1}^{n} t \cdot \frac{CF_t}{(1 + y)^t}}{\sum\limits_{t=1}^{n} \frac{CF_t}{(1 + y)^t}}$$  
+
+</div>
 
 ### Modified Duration:
 Measures price sensitivity to yield changes:
 
-D_mod = D_Mac/(1 + y)
+<div align="center">
+
+$$
+D_{\text{mod}} = \frac{D_{\text{Mac}}}{1 + y}
+$$
+
+</div>
 
 > If Modified Duration = 2.59, then a 1% increase in YTM causes a ~2.59% drop in price.
 
