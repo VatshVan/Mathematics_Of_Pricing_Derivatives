@@ -19,7 +19,9 @@ $$
 
 ### Macaulay Duration:
 Weighted average time until cash flows are received:
-D_mac = $$(Σ t × CF_t / (1 + y)^t) / Price$$
+![Macaulay Duration](https://latex.codecogs.com/png.image?\dpi{150} \bg_white D_{mac}=\frac{\sum_{t=1}^{n}t\cdot\frac{CF_t}{(1+y)^t}}{Price})
+
+
 
 
 ### Modified Duration:
