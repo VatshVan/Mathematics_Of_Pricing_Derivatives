@@ -131,9 +131,18 @@ $$\sum_{i=1}^{7} w_{i} = 1,\quad w_{i} \ge 0.$$
 
 ## 1.5 Visualizations
 
-- **Efficient Frontier Plot**: Risk ($\sigma_{p}$) vs. Return ($R_{p}$), highlighting each optimized portfolio.  
-- **Weight Composition**: Bar charts showing allocation per ticker for each optimized solution.  
-- **Cumulative Returns**: Time series comparison of each portfolio’s historical performance.
+### 1. Efficient Frontier Plot
+
+![Efficient Frontier Plot](plots/efficient_frontier.png)
+
+### 2. Weight Composition
+
+![Weight Composition](plots/weight_composition.png)
+
+### 3. Cumulative Returns
+
+![Cumulative Returns](plots/cumulative_returns.png)
+
 
 <!--*(When generated, save all plots into `assets/` and embed as needed.)*-->
 
