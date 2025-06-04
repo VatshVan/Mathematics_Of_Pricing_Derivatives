@@ -26,40 +26,66 @@ For each ticker:
 
 ## 1.3 Return & Risk Metrics
 
-- **Expected Return Vector** $(\mu)$:  
-  $$
-    \mu_{i} = \frac{1}{T} \sum_{t=1}^{T} r_{i,t}
-  $$
-- **Covariance Matrix** $(\Sigma)$:  
-  $$
-    \Sigma_{ij} = \frac{1}{T-1} \sum_{t=1}^{T} \bigl(r_{i,t} - \bar{r}_{i}\bigr)\bigl(r_{j,t} - \bar{r}_{j}\bigr)
-  $$
-- **Portfolio Return** $(R_p)$:  
-  $$
-    R_{p} = w^\top \mu
-  $$
-- **Portfolio Variance** $(\sigma_{p}^{2})$:  
-  $$
-    \sigma_{p}^{2} = w^\top \Sigma \, w
-  $$
-- **Portfolio Standard Deviation** $(\sigma_{p})$:  
-  $$
-    \sigma_{p} = \sqrt{\,w^\top \Sigma \, w\,}
-  $$
+- **Expected Return Vector** $(\mu)$:
+  <div align="center">
+
+  $$\mu_{i} = \frac{1}{T} \sum_{t=1}^{T} r_{i,t}$$
+</div>
   
+- **Covariance Matrix** $$(\Sigma)$$:
+
+<div align="center">
+
+$$\Sigma_{ij} = \frac{1}{T-1} \sum_{t=1}^{T} \bigl(r_{i,t} - \bigl(r_{i}\bigr)\bigl(r_{j,t}\bigr) - \bar{r}_{j}\bigr)$$
+
+</div>
+
+
+- **Portfolio Return** $(R_p)$:
+
+<div align="center">
+
+  $$R_{p} = w^\top \mu$$
+
+</div>
+
+- **Portfolio Variance** $(\sigma_{p}^{2})$:  
+  
+<div align="center">
+
+  $$\sigma_{p}^{2} = w^\top \Sigma \, w$$
+
+</div>
+  
+- **Portfolio Standard Deviation** $(\sigma_{p})$:  
+
+<div align="center">
+
+  $$\sigma_{p} = \sqrt{\,w^\top \Sigma \, w\,}$$
+
+</div>
+
 Here, $w = [w_{1}, w_{2}, \ldots, w_{7}]^\top$ are portfolio weights (with $\sum_{i=1}^{7} w_{i} = 1$ and $w_{i} \ge 0$).
 
 ## 1.4 Optimization Objectives
 
 ### 1.4.1 Sharpe Ratio Maximization  
 Maximize
-$$
-  \mathrm{Sharpe}(w) \;=\; \frac{\,w^\top \mu \;-\; r_{f}\,}{\sqrt{\,w^\top \Sigma \, w\,}}
-$$
-subject to  
-$$
-  \sum_{i=1}^{7} w_{i} = 1, \quad w_{i} \ge 0.
-$$
+
+<div align="center">
+
+  $$\mathrm{Sharpe}(w) \\;=\\; \frac{\\,w^\top \mu \\;-\\; r_{f}\\,}{\sqrt{\\,w^\top \Sigma \\, w\\,}}$$
+
+</div>
+
+subject to 
+
+<div align="center">
+
+  $$\sum_{i=1}^{7} w_{i} = 1, \quad w_{i} \ge 0.$$
+
+</div>
+
 - $r_{f}$ is the risk-free rate (e.g., 2%).
 
 **Notebook**: [`sharpe_maximum_MPT.ipynb`](./notebooks/sharpe_maximum_MPT.ipynb)  
@@ -69,16 +95,15 @@ $$
 3. Plot efficient frontier by varying feasible weight combinations.
 
 ### 1.4.2 Return Maximization under Risk Constraint  
-Maximize
-$$
-  w^\top \mu
-$$
-subject to  
-$$
-  w^\top \Sigma \, w \;\le\; \sigma_{\max}^{2}, 
+Maximize $$w^\top \mu$$ subject to 
+<div align = ""center>
+
+  $$w^\top \Sigma \, w \;\le\; \sigma_{\max}^{2}, 
   \quad \sum_{i=1}^{7} w_{i} = 1, 
-  \quad w_{i} \ge 0.
-$$
+  \quad w_{i} \ge 0.$$
+
+</div>
+
 - $\sigma_{\max}$ is a chosen volatility cap.
 
 **Notebook**: [`returns_max_MPT.ipynb`](./notebooks/returns_max_MPT.ipynb)  
@@ -88,15 +113,15 @@ $$
 3. Generate return-risk tradeoff curve by varying $\sigma_{\max}$.
 
 ### 1.4.3 Minimum Volatility Portfolio  
-Minimize
-$$
-  w^\top \Sigma \, w
-$$
-subject to  
-$$
-  \sum_{i=1}^{7} w_{i} = 1,\quad w_{i} \ge 0.
-$$
-– Purely a risk-parity approach (no explicit return target).
+Minimize $$w^\top \Sigma \, w$$ subject to  
+
+<div align = "center">
+  
+$$\sum_{i=1}^{7} w_{i} = 1,\quad w_{i} \ge 0.$$
+
+</div>
+
+- Purely a risk-parity approach (no explicit return target).
 
 **Notebook**: [`std_dev_min_MPT.ipynb`](./notebooks/std_dev_min_MPT.ipynb)  
 **Key steps**:
@@ -110,7 +135,7 @@ $$
 - **Weight Composition**: Bar charts showing allocation per ticker for each optimized solution.  
 - **Cumulative Returns**: Time series comparison of each portfolio’s historical performance.
 
-*(When generated, save all plots into `assets/` and embed as needed.)*
+<!--*(When generated, save all plots into `assets/` and embed as needed.)*-->
 
 ## 1.6 Code Implementation
 
