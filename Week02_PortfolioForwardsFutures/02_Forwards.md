@@ -119,8 +119,3 @@ plt.savefig('assets/forward_payoff_plot.png')
 * Assessed payoff sensitivity to underlying price movements.
 * Identified arbitrage conditions and documented appropriate strategies.
 
-## 2.6 Resources
-
-* **Video:** Pricing and Valuation of Forward Commitments (CFA Level II)
-* **Video:** Pricing and Valuation of Forward Contracts (FinQuiz Pro)
-* **Notebook:** `notebooks/02_forwards_pricing.ipynb`
