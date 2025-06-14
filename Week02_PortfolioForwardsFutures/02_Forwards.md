@@ -84,11 +84,13 @@ for name, ST in scenarios.items():
     pv_profit = np.exp(-r * T) * payoff
     rows.append({'Scenario': name, 'S_T': ST, 'Payoff': payoff, 'PV Profit': pv_profit})
 payoff_df = pd.DataFrame(rows)
-payoff_df.to_csv('assets/forward_payoff_table.csv')
+payoff_df.to_csv('Data/forward_payoff_table.csv')
 ```
 
 **Output Table:**
 ![Scenario Payoff Table](Data/forward_payoff_table.csv)
+
+![Forward Payoff Diagram](plots/forward_payoff_scenarios.png)
 
 ### 2.4.4 Arbitrage Strategy
 
@@ -112,7 +114,7 @@ plt.axhline(0, color='black', lw=0.5)
 plt.title('Forward Payoff at Expiry')
 plt.xlabel('S_T')
 plt.ylabel('Payoff')
-plt.savefig('assets/forward_payoff_plot.png')
+plt.savefig('plots/forward_payoff_plot.png')
 ```
 
 ![Forward Payoff Diagram](plots/forward_payoff_plot.png)
