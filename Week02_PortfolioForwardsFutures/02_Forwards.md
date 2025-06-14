@@ -7,9 +7,10 @@ Forward contracts are over-the-counter agreements to buy or sell an underlying a
 * **Forward Price**: Agreed-upon price $F_0$ paid at maturity.
 * **Payoff at Maturity**:
 
-  ```math
-  \text{Payoff}(S_T) = S_T - F_0
-  ```
+$$
+\text{Payoff}(S_T) = S_T - F_0
+$$
+
 * **Present Value of Profit**:
 
   ```math
@@ -20,14 +21,17 @@ Forward contracts are over-the-counter agreements to buy or sell an underlying a
 
 1. **Continuous Dividend Yield** (rate $q$):
 
-   ```math
-   F_0 = S_0 \;e^{(r - q)T}
-   ```
-2. **Discrete Dividend Adjustment** (PV of known dividends $\mathrm{PV(div)}$):
+$$
+F_0 = S_0 \; e^{(r - q)T}
+$$
 
-   ```math
-   F_0 = \bigl(S_0 - \mathrm{PV(div)}\bigr)\;e^{rT}
-   ```
+
+3. **Discrete Dividend Adjustment** (PV of known dividends $\mathrm{PV(div)}$):
+
+$$
+F_0 = \bigl(S_0 - \mathrm{PV(div)}\bigr)\; e^{rT}
+$$
+
 
 ## 2.3 Data Acquisition & Preprocessing
 
