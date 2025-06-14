@@ -27,6 +27,6 @@ Refer to the individual topic files (`.md`) for detailed notes and to the Jupyte
 - **03_Futures.md** – Futures mechanics, margining, pricing via cost‐of‐carry  
 - **04_Integrated_Notes.md** – Placeholder for the combined narrative report (≈2 pages)  
 - **notebooks/** – Jupyter notebooks supporting the portfolio exercises  
-- **assets/** – Charts, payoff diagrams, or screenshots you’ll generate as you progress
+- **scripta/** – contains .py files for generating plots
 - **Data/** - Historical data downloaded of the given stocks
 - **Plots/** - Contain plots
