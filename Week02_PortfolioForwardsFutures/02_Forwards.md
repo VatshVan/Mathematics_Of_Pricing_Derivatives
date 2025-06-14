@@ -88,7 +88,7 @@ payoff_df.to_csv('assets/forward_payoff_table.csv')
 ```
 
 **Output Table:**
-![Scenario Payoff Table](plots/forward_payoff_scenarios.png)
+![Scenario Payoff Table](Data/forward_payoff_table.csv)
 
 ### 2.4.4 Arbitrage Strategy
 
