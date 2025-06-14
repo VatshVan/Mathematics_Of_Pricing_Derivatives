@@ -115,7 +115,7 @@ plt.ylabel('Payoff')
 plt.savefig('assets/forward_payoff_plot.png')
 ```
 
-![Forward Payoff Diagram](assets/forward_payoff_plot.png)
+![Forward Payoff Diagram](plots/forward_payoff_plot.png)
 
 ## 2.5 Self-Analysis Summary
 
