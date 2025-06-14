@@ -1,8 +1,3 @@
-Let’s build **03\_Futures.md** in the same polished format as your Portfolio and Forwards files.
-
-Here’s the full proposed structure for your Futures README:
-
----
 
 # 03. Futures & Pricing Models
 
