@@ -94,11 +94,11 @@ plt.title('Spot vs. Futures vs. Theoretical Futures')
 plt.xlabel('Date')
 plt.ylabel('Price')
 plt.legend()
-plt.savefig('assets/futures_price_plot.png')
+plt.savefig('/futures_price_plot.png')
 plt.show()
 ```
 
-![Futures Price Plot](assets/futures_price_plot.png)
+![Futures Price Plot](plots/futures_price_plot.png)
 
 ### 3.4.3 Basis Plot
 
@@ -109,11 +109,11 @@ plt.axhline(0, color='black', lw=0.5)
 plt.title('Basis Over Time')
 plt.xlabel('Date')
 plt.ylabel('Basis')
-plt.savefig('assets/futures_basis_plot.png')
+plt.savefig('plots/futures_basis_plot.png')
 plt.show()
 ```
 
-![Futures Basis Plot](assets/futures_basis_plot.png)
+![Futures Basis Plot](plots/futures_basis_plot.png)
 
 ### 3.4.4 Mark-to-Market (MTM) Simulation
 
@@ -128,11 +128,11 @@ plt.title('Mark-to-Market P&L Simulation')
 plt.xlabel('Date')
 plt.ylabel('Cumulative P&L')
 plt.legend()
-plt.savefig('assets/futures_mtm_pnl.png')
+plt.savefig('plots/futures_mtm_pnl.png')
 plt.show()
 ```
 
-![Futures MTM PnL Plot](assets/futures_mtm_pnl.png)
+![Futures MTM PnL Plot](plots/futures_mtm_pnl.png)
 
 ---
 
