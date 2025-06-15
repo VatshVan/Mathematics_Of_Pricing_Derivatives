@@ -152,6 +152,3 @@ plt.show()
 * **Notebook:** `notebooks/03_futures_analysis.ipynb`
 
 ---
-
-If you like this structure, I can generate the corresponding `.ipynb` for you next.
-Shall I proceed?
