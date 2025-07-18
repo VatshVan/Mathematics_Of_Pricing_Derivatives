@@ -88,4 +88,4 @@ $$
 
 ---
 
-## Visualize each Greek across price, time, and volatility
+## Visualize each Greek across price, time and volatility
