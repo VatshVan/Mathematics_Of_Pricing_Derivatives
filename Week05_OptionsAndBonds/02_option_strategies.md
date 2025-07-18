@@ -42,10 +42,9 @@ We broadly classify multi-leg strategies into:
 
 **View:** Moderately bullish  
 **Payoff:**
-\[
-\text{Max Gain} = K_2 - K_1 - \text{Net Premium}, \quad
-\text{Max Loss} = \text{Net Premium}
-\]
+
+$$\text{Max Gain} = K_2 - K_1 - \text{Net Premium}, \quad$$
+$$\text{Max Loss} = \text{Net Premium}$$
 
 ---
 
@@ -65,9 +64,9 @@ We broadly classify multi-leg strategies into:
 
 **View:** High volatility expected, direction unknown  
 **Breakeven:**  
-\[
+$$
 S = K \pm (\text{Total Premium Paid})
-\]
+$$
 
 ---
 
