@@ -1,4 +1,4 @@
-# 13 — Black-Scholes Pricing Model
+# Black-Scholes Pricing Model
 
 ---
 
