@@ -36,14 +36,12 @@ All complex strategies build on these.
 **Net Premium**: $$\( \text{Debit} \)$$
 
 **Payoff**:
-$$
-\begin{cases}
+$$\begin{cases}
 0, & S_T \leq K_1 \\
 S_T - K_1, & K_1 < S_T < K_2 \\
 K_2 - K_1, & S_T \geq K_2
 \end{cases}
-- \text{Net Premium}
-$$
+- \text{Net Premium}$$
 
 **Limited Loss, Limited Profit**  
 Used when mildly bullish.
