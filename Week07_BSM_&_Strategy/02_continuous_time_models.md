@@ -111,4 +111,4 @@ Used for:
 ##
 Code simulation of GBM paths and visualize key properties in:
 
-`notebooks/23_continuous_time_models.ipynb`
+`notebooks/02_continuous_time_models.ipynb`
