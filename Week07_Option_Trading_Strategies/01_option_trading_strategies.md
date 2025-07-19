@@ -36,12 +36,33 @@ All complex strategies build on these.
 **Net Premium**: $$\( \text{Debit} \)$$
 
 **Payoff**:
-$$\begin{cases}
-0, & S_T \leq K_1 \\
+
+$$
+\begin{aligned}
+& f(S_T) = \\
+&\quad
+\begin{cases}
+0, & S_T \le K_1 \\
 S_T - K_1, & K_1 < S_T < K_2 \\
-K_2 - K_1, & S_T \geq K_2
-\end{cases}
-- \text{Net Premium}$$
+K_2 - K_1, & S_T \ge K_2
+\end{cases} \\
+&\quad - \text{Net Premium}
+\end{aligned}
+$$
+
+
+<!-- <center>
+  $$
+  f(S_T) = 
+  \begin{cases}
+  0, & \text{if } S_T \leq K_1 \\
+  S_T - K_1, & \text{if } K_1 < S_T < K_2 \\
+  K_2 - K_1, & \text{if } S_T \geq K_2
+  \end{cases}
+  - \text{Net Premium}
+  $$
+</center>
+-->
 
 **Limited Loss, Limited Profit**  
 Used when mildly bullish.
@@ -69,9 +90,7 @@ Used when mildly bullish.
   (both at strike $$\( K \)$$)
 
 **Payoff**:
-$$
-\max(S_T - K, 0) + \max(K - S_T, 0) - \text{Premium}
-$$
+$$\max(S_T - K, 0) + \max(K - S_T, 0) - \text{Premium}$$
 
 **Unlimited profit in either direction**  
 High cost
@@ -101,9 +120,7 @@ Used for volatility plays at lower cost
 Where $$\( K_1 < K_2 < K_3 \)$$, typically $$\( K_2 \)$$ is ATM
 
 **Payoff**:
-$$
-\text{Maximum at } S_T = K_2
-$$
+$$\text{Maximum at } S_T = K_2$$
 
 Limited risk & reward  
 Profits if stock **stays near middle strike**
@@ -119,7 +136,7 @@ Profits if stock **stays near middle strike**
 **Combination**:  
 = Bull Put Spread + Bear Call Spread
 
-Max profit when **stock stays between \( K_1 \) and \( K_2 \)**  
+Max profit when **stock stays between $$\( K_1 \)$$ and $$\( K_2 \)$$**  
 Loses only if stock moves **too far in either direction**
 
 Used in **low-volatility environments**
@@ -131,10 +148,10 @@ Used in **low-volatility environments**
 | Strategy        | Max Profit            | Max Loss             | Breakevens                   |
 |----------------|------------------------|-----------------------|------------------------------|
 | Bull Call      | $$\( K_2 - K_1 - \text{net premium} \)$$ | $$\( \text{net premium} \)$$     | $$\( K_1 + \text{net premium} \)$$ |
-| Bear Put       | \( K_2 - K_1 - \text{net premium} \) | \( \text{net premium} \)     | \( K_2 - \text{net premium} \)$$ |
+| Bear Put       | $$\( K_2 - K_1 - \text{net premium} \)$$ | $$\( \text{net premium} \)$$     | $$\( K_2 - \text{net premium} \)$$ |
 | Straddle       | Unlimited               | Total premium         | $$\( K ± \text{premium} \)$$     |
 | Strangle       | Unlimited               | Total premium         | $$\( K_1 - \text{put prem}, K_2 + \text{call prem} \)$$ |
-| Iron Condor    | Net premium received    | \( \text{spread} - \text{premium} \) | 2 breakeven points between spreads |
+| Iron Condor    | Net premium received    | $$\( \text{spread} - \text{premium} \)$$ | 2 breakeven points between spreads |
 
 ---
 
@@ -142,7 +159,7 @@ Used in **low-volatility environments**
 
 Each strategy produces a **distinct payoff diagram**, showing:
 - Region of profits/losses
-- Flat, capped, or V-shaped structures
+- Flat, capped or V-shaped structures
 - Risk/reward trade-off clearly visible
 
 ---
