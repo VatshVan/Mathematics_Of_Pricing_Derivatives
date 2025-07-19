@@ -25,7 +25,7 @@ This project includes detailed notes, implementations, and visualizations on the
 
 ---
 <!--
-## 📁 Repository Structure
+## Repository Structure
 
 ```bash
 mathematics-of-pricing-derivatives/
