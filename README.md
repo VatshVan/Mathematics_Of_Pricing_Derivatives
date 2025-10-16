@@ -147,7 +147,7 @@ Each weekly folder contains a `README.md` file that serves as a progress report 
 
 ## 📜 License
 
-This project is licensed under the **GNU 2.0 License**. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the **GNU GENERAL PUBLIC LICENSE 2.0 License**. See the [LICENSE](LICENSE) file for more details.
 
 ***
 
