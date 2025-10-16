@@ -110,8 +110,8 @@ Follow these steps to set up the project locally.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/mathematics-of-derivative-pricing.git](https://github.com/your-username/mathematics-of-derivative-pricing.git)
-    cd mathematics-of-derivative-pricing
+    git clone [https://github.com/VatshVan/Mathematics_Of_Pricing_Derivatives.git](https://github.com/VatshVan/Mathematics_Of_Pricing_Derivatives.git)
+    cd Mathematics_Of_Pricing_Derivatives
     ```
 2.  **Install the required packages:**
     ```sh
