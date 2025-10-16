@@ -161,8 +161,7 @@ This project would not have been possible without the guidance and support of:
 
 ## 📬 Contact
 
-Vatsh Van
+**Vatsh Van**
 
 * **GitHub**: `https://github.com/VatshVan`
 * **Email**: `vatshvan.iitb@gmail.com`
-* **LinkedIn**: `https://linkedin.com/in/your-profile`
