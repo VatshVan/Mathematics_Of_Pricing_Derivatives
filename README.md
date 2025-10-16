@@ -1,6 +1,6 @@
 # Mathematics of Derivative Pricing
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](LICENSE)
 
 A comprehensive implementation and exploration of the mathematical models and strategies that underpin modern financial derivative pricing. This project was developed as the final report for the Summer of Science Program at IIT Bombay.
 
@@ -57,7 +57,7 @@ This project provides a deep dive into the following areas of quantitative finan
 
 ## 📂 Repository Structure
 
-The project is organized into weekly modules, each containing its own set of notebooks, scripts, and reports.
+The project is organized into weekly modules, each containing its own set of notebooks, scripts and reports.
 
 ```
 .
@@ -147,7 +147,7 @@ Each weekly folder contains a `README.md` file that serves as a progress report 
 
 ## 📜 License
 
-This project is licensed under the **Apache 2.0 License**. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the **GNU 2.0 License**. See the [LICENSE](LICENSE) file for more details.
 
 ***
 
@@ -163,6 +163,6 @@ This project would not have been possible without the guidance and support of:
 
 Vatsh Van
 
-* **GitHub**: `https://github.com/your-username`
-* **Email**: `your.email@example.com`
+* **GitHub**: `https://github.com/VatshVan`
+* **Email**: `vatshvan.iitb@gmail.com`
 * **LinkedIn**: `https://linkedin.com/in/your-profile`
